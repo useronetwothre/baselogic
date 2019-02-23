@@ -10,6 +10,28 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 2019_02_23_112110) do
+
+  create_table "beneficiaries", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.string "rid"
+    t.string "uid"
+    t.string "full_name"
+    t.string "address"
+    t.string "country"
+    t.string "currency"
+    t.string "account_number"
+    t.string "account_type"
+    t.string "bank_name"
+    t.string "bank_address"
+    t.string "bank_country"
+    t.string "bank_swift_code"
+    t.string "intermediary_bank_name"
+    t.string "intermediary_bank_address"
+    t.string "intermediary_bank_country"
+    t.string "intermediary_bank_swift_code"
+    t.string "status"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
 end
